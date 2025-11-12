@@ -5,7 +5,7 @@ import frappe
 from frappe.model.document import Document
 
 
-class havano__leave_encashment(Document):
+class havano_leave_encashment(Document):
 
     def before_save(self):
         # Ensure days is set

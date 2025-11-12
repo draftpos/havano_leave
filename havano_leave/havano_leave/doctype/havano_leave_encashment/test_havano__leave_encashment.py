@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class Testhavano__leave_encashment(FrappeTestCase):
+class Testhavano_leave_encashment(FrappeTestCase):
 	pass

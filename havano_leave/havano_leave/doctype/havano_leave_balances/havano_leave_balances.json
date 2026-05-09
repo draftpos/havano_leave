@@ -14,6 +14,7 @@
   {
    "fieldname": "employee",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Employee ",
    "options": "havano_employee"
   },
@@ -26,11 +27,13 @@
   {
    "fieldname": "leave_balance",
    "fieldtype": "Float",
+   "in_list_view": 1,
    "label": "Leave Balance"
   },
   {
    "fieldname": "havano_leave_type",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Leave Type",
    "options": "Havano Leave Type"
   }

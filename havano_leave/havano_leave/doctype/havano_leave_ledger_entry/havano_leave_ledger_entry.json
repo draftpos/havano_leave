@@ -1,0 +1,98 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:LLE-{employee}-{####}",
+ "creation": "2026-06-30 12:08:22.008566",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "posting_date",
+  "transaction_type",
+  "transaction_name",
+  "days_added",
+  "days_deducted",
+  "balance_after_transaction"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Employee",
+   "options": "havano_employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Posting Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "transaction_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Transaction Type",
+   "options": "\nLeave Allocation\nLeave Application\nLeave Reversal\nStarting Balance",
+   "reqd": 1
+  },
+  {
+   "fieldname": "transaction_name",
+   "fieldtype": "Data",
+   "label": "Transaction Name"
+  },
+  {
+   "default": "0",
+   "fieldname": "days_added",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Days Added"
+  },
+  {
+   "default": "0",
+   "fieldname": "days_deducted",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Days Deducted"
+  },
+  {
+   "fieldname": "balance_after_transaction",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Balance After Transaction"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-06-30 12:08:22.008566",
+ "modified_by": "Administrator",
+ "module": "Havano Leave",
+ "name": "Havano Leave Ledger Entry",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
